@@ -10,6 +10,12 @@ services:
     volumes:
       - mongo-data:/data/db
 
+      
+volumes:
+  mongo-data:
+
+networks:
+  my-network:
 
   # backend:
   #   build: ./backend
