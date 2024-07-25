@@ -14,8 +14,8 @@ services:
 volumes:
   mongo-data:
 
-networks:
-  my-network:
+# networks:
+#   my-network:
 
   # backend:
   #   build: ./backend
