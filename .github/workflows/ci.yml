@@ -55,9 +55,9 @@ jobs:
         cat ~/.ssh/id_rsa
         ls -la ~/.ssh/
 
-    - name: Copy backend files to server
-      run: |
-        scp -r -i ~/.ssh/id_rsa -o StrictHostKeyChecking=no ./backend/ ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }}:/home/kursant/docker/app_new/backend
+    # - name: Copy backend files to server
+    #   run: |
+    #     scp -r -i ~/.ssh/id_rsa -o StrictHostKeyChecking=no ./backend/ ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }}:/home/kursant/docker/app_new/backend
     
     - name: Copy docker-compose.yml to server
       run: |
