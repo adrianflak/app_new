@@ -21,7 +21,7 @@ services:
   app:
     image: ernabo/backend:latest
     ports: 
-      - "3000:3000"
+      - "3001:3000"
     environment:
       - MONGO_URL=mongodb://mongo:27017/movies
 
